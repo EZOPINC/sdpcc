@@ -7,21 +7,25 @@ The site is built as a static website using **HTML, CSS, Bootstrap 5, and Jekyll
 
 ## 📂 Project Structure
 
-sdpcc-site/
+sdpcc-jekyll/
 │
+├── _config.yml
 ├── _includes/
-│ └── seo.html # SEO + social tags (included in all pages)
+│   └── seo.html
+│
+├── _layouts/
+│   └── default.html
 │
 ├── assets/
-│ ├── css/styles.css # Custom CSS
-│ ├── js/scripts.js # Custom JavaScript
-│ └── img/ # Images (hero, gallery, etc.)
+│   └── css/
+│       └── styles.css
 │
-├── index.html # Home page
-├── gallery.html # Year-wise gallery
-├── events.html # Upcoming events + calendar
-├── announcements.html # Committee announcements
-└── contact.html # Email / call connect page
+├── index.md
+├── gallery.md
+├── events.md
+├── announcements.md
+├── contact.md
+└── README.md
 
 
 
@@ -72,9 +76,14 @@ sdpcc-site/
 - Location: Saskatoon, Saskatchewan, Canada  
 """
 
-# Save README.md
-readme_path = "/mnt/data/README.md"
-with open(readme_path, "w") as f:
-    f.write(readme_content)
 
-readme_path
+# Saskatoon Durga Puja Celebration Committee (SDPCC) Website
+
+This is the official Jekyll-based website for the **Saskatoon Durga Puja Celebration Committee (SDPCC)**.
+
+## 🚀 Run Locally
+
+```bash
+gem install bundler jekyll
+bundle install
+bundle exec jekyll serve

@@ -1,0 +1,14 @@
+title: "Saskatoon Durga Puja Celebration Committee (SDPCC)"
+description: "Official website of SDPCC - Celebrating Durga Puja in Saskatoon, Saskatchewan, Canada"
+baseurl: "" # keep blank for GitHub Pages
+url: ""     # set to your GitHub Pages URL later
+
+markdown: kramdown
+theme: minima
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap 
+  - jekyll-redirect-from
+  

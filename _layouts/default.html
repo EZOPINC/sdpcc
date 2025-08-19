@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  {% include seo.html %}
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">SDPCC</a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li><a class="nav-link" href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a class="nav-link" href="{{ '/gallery' | relative_url }}">Gallery</a></li>
+            <li><a class="nav-link" href="{{ '/events' | relative_url }}">Events</a></li>
+            <li><a class="nav-link" href="{{ '/announcements' | relative_url }}">Announcements</a></li>
+            <li><a class="nav-link" href="{{ '/contact' | relative_url }}">Connect</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    {{ content }}
+  </main>
+
+  <footer>
+    <div class="container text-center">
+      <p>&copy; {{ site.time | date: "%Y" }} Saskatoon Durga Puja Celebration Committee (SDPCC)</p>
+      <a href="https://facebook.com" target="_blank">Facebook</a> |
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
