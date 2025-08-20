@@ -1,7 +1,7 @@
 title: "Saskatoon Durga Puja Celebration Committee (SDPCC)"
 description: "Official website of SDPCC - Celebrating Durga Puja in Saskatoon, Saskatchewan, Canada"
 baseurl: "/" # keep blank for GitHub Pages
-url: "https://ezopinc.github.io/sdpcc"     # set to your GitHub Pages URL later
+url: "https://ezopinc.github.io/sdpcc"     # set to your GitHub Pages URL
 
 markdown: kramdown
 theme: minima
