@@ -8,6 +8,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
   <!-- SEO -->
   <meta charset="UTF-8">
@@ -32,47 +33,91 @@
 <meta name="twitter:image" content="assets/img/og-image.jpg">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="/">SDPCC</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-          <li class="nav-item"><a class="nav-link " href="/gallery">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link " href="/events">Events</a></li>
-          <li class="nav-item"><a class="nav-link " href="/announcements">Announcements</a></li>
-          <li class="nav-item"><a class="nav-link " href="/contact">Connect</a></li>
-        </ul>
-      </div>
-    </div>
+  <div class="page-wrapper">
+    <!-- Header / Navbar -->
+      <!-- Navbar -->
+  <header>
+  <nav class="navbar">
+    <a href="/" class="logo-link">
+      <img src="/assets/images/logo.jpeg" alt="SDPCC Logo" class="logo">
+      <span class="site-name">Saskatoon Durga Puja</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/gallery/">Gallery</a></li>
+      <li><a href="/events/">Events</a></li>
+      <li><a href="/announcements/">Announcements</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
   </nav>
+</header>
+    <!-- Main Content -->
+    <main class="container py-4">
+      <p><img src="/assets/images/durga.jpg" alt="Durga" class="img" /></p>
 
-  <!-- Page content -->
-  <main class="container py-4">
-    <h1 id="welcome-to-sdpcc">Welcome to SDPCC</h1>
+<h1 id="welcome-to-sdpcc">Welcome to SDPCC</h1>
 
 <p>The <strong>Saskatoon Durga Puja Celebration Committee (SDPCC)</strong> is a cultural community organization based in Saskatoon, Saskatchewan, Canada.<br />
 We have been celebrating <strong>Durga Puja, Saraswati Puja, and other cultural events</strong> for over 55 years.</p>
 
 <p>Our community brings together families and individuals to celebrate Bengali traditions, share our culture, and create lasting memories.</p>
 
-  </main>
+<div class="center-link">
+  <a href="https://www.facebook.com/saskatoondurgapuja" target="_blank">
+    Visit our Facebook Page for more information
+  </a>
+</div>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4 mt-5">
-    <div class="container text-center">
-      <p>© 2025 Saskatoon Durga Puja Celebration Committee (SDPCC) | Saskatoon, Canada</p>
-      <div>
-        <a href="https://facebook.com/yourpage" target="_blank" class="text-white me-3">Facebook</a>
-        <a href="https://instagram.com/yourpage" target="_blank" class="text-white">Instagram</a>
-      </div>
+<h2 id="-upcoming-events">📰 Upcoming Events</h2>
+
+<div class="notice-board">
+  
+    <div class="notice-item">
+      <span class="date-badge">Sept 26, 2025</span>
+      <span class="event-text">Mahalaya &amp; Durga Puja Opening Ceremony</span>
     </div>
-  </footer>
+  
+    <div class="notice-item">
+      <span class="date-badge">Sept 27, 2025</span>
+      <span class="event-text">Sasthi, Saptami, Ashtami Puja</span>
+    </div>
+  
+    <div class="notice-item">
+      <span class="date-badge">Sept 28, 2025</span>
+      <span class="event-text">Navami &amp; Dashami with Sindoor Khela</span>
+    </div>
+  
+    <div class="notice-item">
+      <span class="date-badge">Jan 25, 2026</span>
+      <span class="event-text">Saraswati Puja Celebration</span>
+    </div>
+  
+</div>
 
+
+    </main>
+  <!-- Footer -->
+    <footer class="footer">
+  <div class="container text-center">
+    <p>© 2025 Saskatoon Durga Puja Celebration Committee (SDPCC) | Saskatoon, Canada</p>
+    <div class="social-icons">
+      Connect with us on:
+      <a href="https://www.facebook.com/saskatoondurgapuja" target="_blank" aria-label="Facebook">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://instagram.com/saskatoondurgapuja" target="_blank" aria-label="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+      
+    </div>
+  
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/scripts.js"></script>
+
+</div>
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/js/scripts.js"></script>

@@ -5,9 +5,9 @@ title: Connect
 
 # Connect with Us
 
-📧 Email: [info@sdpcc.ca](mailto:info@sdpcc.ca)  
-📞 Phone: +1 (306) 123-4567  
+📧 Email: [info@sdpcc.ca](mailto:supratim.ghosh@gmail.com)  
+📞 Phone: +1 (306) 241-9282
 
 Follow us on:  
-- [Facebook](https://facebook.com)  
+- [Facebook](https://www.facebook.com/saskatoondurgapuja)  
 - [Instagram](https://instagram.com)
