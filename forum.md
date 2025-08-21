@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Forum
+permalink: /forum/
 ---
 
 # Forums 

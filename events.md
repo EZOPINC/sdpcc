@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Events
+permalink: /events/
 ---
 
 # Upcoming Events

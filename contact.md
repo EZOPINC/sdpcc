@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Connect
+permalink: /contact/
 ---
 
 # Connect with Us

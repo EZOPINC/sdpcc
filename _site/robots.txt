@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/sdpcc/sitemap.xml
+Sitemap: https://ezopinc.github.io//sdpcc/sitemap.xml
