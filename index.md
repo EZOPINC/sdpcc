@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-<img src="/sdpcc/assets/images/durga.jpg" alt="Durga" class="img">
+<img src="/assets/images/durga.jpg" alt="Durga" class="img">
 
 # Welcome to SDPCC
 
