@@ -20,15 +20,5 @@ Our community brings together families and individuals to celebrate Bengali trad
   </a>
 </div>
 
-## 📰 Upcoming Events
-
-<div class="notice-board">
-  {% for event in site.data.events %}
-    <div class="notice-item">
-      <span class="date-badge">{{ event.date }}</span>
-      <span class="event-text">{{ event.title }}</span>
-    </div>
-  {% endfor %}
-</div>
 
 

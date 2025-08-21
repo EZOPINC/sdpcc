@@ -2,67 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- SEO -->
+  {% include seo.html %}
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <!-- Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-      <nav class="navbar">
-        <ul>
-          <li><a href="{{ '/' | relative_url }}">Home</a></li>
-          <li><a href="{{ '/gallery/' | relative_url }}">Gallery</a></li>
-          <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-          <li><a href="{{ '/events/' | relative_url }}">Events</a></li>
-          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-          <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="page-wrapper">
+    <!-- Header / Navbar -->
+    {% include header.html %}
+    <!-- Main Content -->
+    <main class="home-container container">
+  <!-- Left column: Main page content -->
+  <section class="main-content fade-in">
+    {{ content }}
+  </section>
 
-  <!-- Main Layout -->
-  <main class="home-container container">
-    <!-- Left column: Main page content -->
-    <section class="main-content fade-in">
-      {{ content }}
-    </section>
-
-    <!-- Right column: Upcoming Events -->
-    <aside class="sidebar slide-in-right">
-      <h2>Upcoming Events</h2>
-      <ul class="event-list">
-        {% for event in site.data.events limit:5 %}
-          <li>
-            <strong>{{ event.name }}</strong><br>
-            <span>{{ event.date | date: "%B %d, %Y" }}</span><br>
-            <span>{{ event.location }}</span>
-          </li>
-        {% endfor %}
-      </ul>
-      <a href="{{ '/events/' | relative_url }}" class="btn">View All Events</a>
-    </aside>
-  </main>
-
+  <!-- Right column: Upcoming Events (only on home page) -->
+  {% if page.url == "/" %}
+  <aside class="sidebar slide-in-right">
+    <h2>Upcoming Events</h2>
+    <ul class="event-list">
+      {% for event in site.data.events limit:5 %}
+        <li>
+          <strong>{{ event.name }}</strong><br>
+          <span>{{ event.date | date: "%B %d, %Y" }}</span><br>
+          <span>{{ event.location }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+    <a href="{{ '/events/' | relative_url }}" class="view-all-events">View All Events</a>
+  </aside>
+  {% endif %}
+</main>
   <!-- Footer -->
-  <footer class="site-footer fade-in">
-    <div class="container">
-      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
-      <p>Total Page Views: <span id="pageviews">Loading...</span></p>
-    </div>
-  </footer>
-
-  <!-- Pageview Counter -->
-  <script async src="https://api.countapi.xyz/hit/{{ site.github.repository_nwo }}/pageview?callback=pageViewHandler"></script>
-  <script>
-    function pageViewHandler(response) {
-      document.getElementById('pageviews').innerText = response.value;
-    }
-  </script>
+    {% include footer.html %}
+</div>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
 </body>
 </html>

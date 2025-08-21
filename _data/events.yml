@@ -1,14 +1,19 @@
 - date: "Sept 26, 2025"
-  title: "Mahalaya & Durga Puja Opening Ceremony"
+  name: "Mahalaya & Durga Puja Opening Ceremony"
+  location: "Shree Lakshmi Narayan Temple"
 
 - date: "Sept 27, 2025"
-  title: "Sasthi, Saptami, Ashtami Puja"
+  name: "Sasthi, Saptami, Ashtami Puja"
+  location: "Shree Lakshmi Narayan Temple"
 
 - date: "Sept 28, 2025"
-  title: "Navami & Dashami with Sindoor Khela"
+  name: "Navami & Dashami with Sindoor Khela"
+  location: "Shree Lakshmi Narayan Temple"
 
 - date: "Jan 25, 2026"
-  title: "Saraswati Puja Celebration"
+  name: "Saraswati Puja Celebration"
+  location: "Shree Lakshmi Narayan Temple"
 
-- date: "Mar 29, 2026"
-  title: "Dol Jatra (Holi) Celebration"
+- date: "Mar 29, 2026" 
+  name: "Dol Jatra (Holi) Celebration"
+  location: "Meewasin Park( depending on weather)"
