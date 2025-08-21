@@ -14,11 +14,11 @@ Explore our year-wise celebration galleries:
 
 - **2024** - Durga Puja Group Photo
 
-<img src="/assets/images/2024_durga_puja.jpg" alt="2024 Durga Puja" class="img">
+<img src="{{ '/assets/images/2024_durga_puja.jpg' | relative_url }}" alt="2024 Durga Puja" class="img">
 
 - **2024** - Saraswati Puja & Cultural Program
 
-<img src="/assets/images/2024_saraswati_puja.jpg" alt="2024 Durga Puja" class="img">
+<img src="{{ '/assets/images/2024_saraswati_puja.jpg' | relative_url }}" alt="2024 Durga Puja" class="img">
 
 
 - **2023** - Durga Puja & Community Dinner
