@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<img src="{{ '/assets/images/2024_durga_puja.jpg' | relative_url }}" alt="2024 Durga Puja" class="img" />
+<img src="{{ '/assets/images/durga.jpg' | relative_url }}" alt="dpcc Durga pratima" class="img" />
 
 # Welcome to SDPCC
 
