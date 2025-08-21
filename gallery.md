@@ -10,7 +10,7 @@ Explore our year-wise celebration galleries:
 
 - **2025** - Saraswati Puja Group photo
 
-<img src="/assets/images/2025_saraswati_puja.jpg" alt="2025 Saraswati Puja" class="img">
+<img src="{{ '/assets/images/2025_saraswati_puja.jpg' | relative_url " alt="2025 Saraswati Puja" class="img">
 
 - **2024** - Durga Puja Group Photo
 

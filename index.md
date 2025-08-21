@@ -2,7 +2,8 @@
 layout: default
 title: Home
 ---
-<img src="/assets/images/durga.jpg" alt="Durga" class="img">
+
+<img src="{{ '/assets/images/2024_durga_puja.jpg' | relative_url }}" alt="2024 Durga Puja" class="img" />
 
 # Welcome to SDPCC
 
