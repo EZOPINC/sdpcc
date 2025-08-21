@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Announcements
+permalink: /announcements/
 ---
 
 # Announcements
