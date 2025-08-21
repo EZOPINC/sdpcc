@@ -5,7 +5,8 @@ url: "https://ezopinc.github.io/sdpcc"     # set to your GitHub Pages URL
 
 markdown: kramdown
 theme: minima
-
+# Build settings
+collections:
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
