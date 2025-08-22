@@ -7,7 +7,8 @@ gem "github-pages", group: :jekyll_plugins
 gem "rouge"
 
 # Optional: If you want pagination
-gem "jekyll-paginate"
+#gem "jekyll-paginate"
+gem "jekyll-paginate-v2"
 
 # Optional: If you want SEO tags
 gem "jekyll-seo-tag"
