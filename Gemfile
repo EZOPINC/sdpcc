@@ -21,3 +21,5 @@ gem "jekyll-feed"
 
 # Use Bundler v2.5.x (safe with Ruby 3.1 used by GitHub Pages)
 gem "bundler", "~> 2.5"
+
+gem "jekyll-paginate", "~> 1.1"
