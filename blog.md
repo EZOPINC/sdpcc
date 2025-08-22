@@ -22,3 +22,13 @@ pagination:
       </div>
     {% endfor %}
   </div>
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="page-link">← Newer Posts</a>
+    {% endif %}
+    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}" class="page-link">Older Posts →</a>
+    {% endif %}
+  </div>
+</div>
