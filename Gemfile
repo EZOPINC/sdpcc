@@ -8,4 +8,4 @@ gem "jekyll-feed", "~> 0.17"
 gem "jekyll-sitemap", "~> 1.4"
 gem "minima", "~> 2.5"
 
-gem "jekyll-paginate-v2", "~> 3.0"
+gem "jekyll-paginate"

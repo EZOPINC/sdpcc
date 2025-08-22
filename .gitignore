@@ -14,7 +14,7 @@ vendor/
 # OS-specific
 .DS_Store
 Thumbs.db
-
+s
 # Logs
 *.log
 
