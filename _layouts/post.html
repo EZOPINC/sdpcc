@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{% include seo.html %}
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+      {% if page.reading_time %}
+      <span class="post-reading-time">· {{ page.reading_time }}</span>
+      {% endif %}
+    </div>
+    {% if page.tags %}
+    <div class="post-tags">
+      {% for tag in page.tags %}
+        <a href="{{ '/tags/' | append: tag | relative_url }}" class="tag">{{ tag }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
+
