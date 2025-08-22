@@ -1,0 +1,32 @@
+<!-- Navbar -->
+<header class="navbar">
+  <div class="nav-container">
+  <a href="{{ '/' | relative_url }}" class="logo-link">
+    <img src="{{ '/assets/images/logo.jpeg' | relative_url }}" alt="SDPCC Logo" class="logo">
+    <span class="site-name">Saskatoon Durga Puja</span>
+  </a>
+
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+    <li><a href="{{ '/events/' | relative_url }}">Events</a></li>
+    <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Forum ▾</a>
+      <ul class="dropdown-content">
+        <li><a href="{{ '/announcements/' | relative_url }}">Announcements</a></li>
+        <li><a href="https://saskatoondurgapuja.blogspot.com/" target="_blank">Archive Blogs</a></li>
+        <li><a href="{{ '/blog/' | relative_url }}">Blogs</a></li>
+        <li><a href="{{ '/gallery/' | relative_url }}">Gallery</a></li>
+        <li><a href="{{ '/forum/' | relative_url }}">Forum</a></li>
+        <li><a href="https://facebook.com/saskatoondurgapuja" target="_blank">Facebook</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</header>
