@@ -13,7 +13,7 @@ pagination:
   <p>Read the latest updates, cultural articles, and festival highlights from our community.</p>
 
   <div class="blog-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <div class="blog-card">
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         <p class="blog-meta">📅 {{ post.date | date: "%B %d, %Y" }}</p>
