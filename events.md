@@ -10,7 +10,8 @@ permalink: /events/
   {% for event in site.data.events %}
     <div class="notice-item">
       <span class="date-badge">{{ event.date }}</span>
-      <span class="event-text">{{ event.title }}</span>
+      <span class="event-text">{{ event.name }}</span>
+      <span class="event-text">{{ event.location }}</span>
     </div>
   {% endfor %}
 </div>

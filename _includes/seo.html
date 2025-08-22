@@ -18,3 +18,24 @@
 <meta name="twitter:title" content="Saskatoon Durga Puja Celebration Committee (SDPCC)">
 <meta name="twitter:description" content="CDurga Puja, bengali community, Kolkata Bengali people in Saskatoon Canada, Celebrating Bengali culture, traditions, and festivals in Saskatoon, Saskatchewan, Canada">
 <meta name="twitter:image" content="assets/img/og-image.jpg">
+
+
+{%- comment -%} _includes/seo.html {%- endcomment -%}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{ page.description | default: site.description }}">
+<meta name="author" content="{{ page.author | default: site.author }}">
+<meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}{% endif %}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:image" content="{{ page.featured_image | default: site.default_image }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ page.description | default: site.description }}">
+<meta name="twitter:image" content="{{ page.featured_image | default: site.default_image }}">

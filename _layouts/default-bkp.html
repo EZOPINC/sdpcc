@@ -16,29 +16,9 @@
     <!-- Header / Navbar -->
     {% include header.html %}
     <!-- Main Content -->
-    <main class="home-container container">
-  <!-- Left column: Main page content -->
-  <section class="main-content fade-in">
-    {{ content }}
-  </section>
-
-  <!-- Right column: Upcoming Events (only on home page) -->
-  {% if page.url == "/" %}
-  <aside class="sidebar slide-in-right">
-    <h2>Upcoming Events</h2>
-    <ul class="event-list">
-      {% for event in site.data.events limit:5 %}
-        <li>
-          <strong>{{ event.name }}</strong><br>
-          <span>{{ event.date | date: "%B %d, %Y" }}</span><br>
-          <span>{{ event.location }}</span>
-        </li>
-      {% endfor %}
-    </ul>
-    <a href="{{ '/events/' | relative_url }}" class="view-all-events">View All Events</a>
-  </aside>
-  {% endif %}
-</main>
+    <main class="container py-4">
+      {{ content }}
+    </main>
   <!-- Footer -->
     {% include footer.html %}
 </div>
