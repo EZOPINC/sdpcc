@@ -1,4 +1,3 @@
-# Gemfile for SDPCC Jekyll site
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.4.1"

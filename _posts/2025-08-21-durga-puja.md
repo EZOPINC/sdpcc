@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Durga Puja: Celebrating Devotion, Culture & Tradition"
+description: "Discover the essence of Durga Puja, a vibrant festival of devotion, art, and culture celebrated across Bengal and the world."
+author: "Community Team"
 date: 2025-08-21
 categories: [Culture, Festivals, BengaliTraditions]
 tags: [Durga Puja, Bengali Culture, Festivals, Tradition]
-author: "Community Team"
 image: "/assets/images/durga.jpg"
-description: "Discover the essence of Durga Puja, a vibrant festival of devotion, art, and culture celebrated across Bengal and the world."
-featured_image: "/assets/images/durga-puja.jpg"
+featured_image: "/assets/images/durga.jpg"
 reading_time: 3 min
 ---
 
