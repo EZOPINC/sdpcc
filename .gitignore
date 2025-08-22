@@ -4,7 +4,7 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .cache
-._config.yml
+
 
 
 # Ruby / Bundler
@@ -14,7 +14,7 @@ vendor/
 # OS-specific
 .DS_Store
 Thumbs.db
-
+s
 # Logs
 *.log
 
