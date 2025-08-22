@@ -1,7 +1,23 @@
-title: "Saskatoon Durga Puja Celebration Committee (SDPCC)"
-description: "Official website of SDPCC - Celebrating Durga Puja in Saskatoon, Saskatchewan, Canada"
+# Site settings
+title: "Saskatoon Durga Puja Celebration Committee | SDPCC"
+description: "Saskatoon Durga Puja Celebration Committee (SDPCC) – Celebrating Bengali culture, Durga Puja, Saraswati Puja, and cultural heritage in Saskatoon, Canada."
+author: "SDPCC"
+
+# Default image for Open Graph / Twitter if a page doesn’t specify one
+default_image: "/assets/images/favicon.ico"
+
 baseurl: "/" # keep blank for GitHub Pages
 url: "https://ezopinc.github.io/sdpcc"     # set to your GitHub Pages URL
+
+
+
+paginate: 5 # Number of posts per page
+paginate_path: "/blog/page/:num"
+
+# Social media (optional, improves SEO & previews)
+twitter_username: "sdpcc_saskatoon" # if you have one
+instagram_username: "sdpcc_saskatoon" # if you have one
+facebook_app_id: "" # if you have one
 
 markdown: kramdown
 theme: minima
@@ -12,6 +28,3 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
-
-paginate: 5 # Number of posts per page
-paginate_path: "/blog/page/:num"

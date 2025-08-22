@@ -1,41 +1,23 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Saskatoon Durga Puja Celebration Committee | SDPCC</title>
-<meta name="description" content="Saskatoon Durga Puja Celebration,SDPCC, Celebrating Bengali culture, festivals in Saskatoon, Canada, Bengali community, Kolkata Bengalis, Bengali traditions, cultural events, Saraswati Puja, Durga Puja, Bengali heritage, Saskatoon events">
-<meta name="keywords" content="Durga Puja, Saskatoon, Bengali Community, SDPCC, Saraswati Puja, Bengali Festivals Canada, Kolkata Bengalis, Bengali Culture, Bengali Traditions, Saskatoon Events, Community Events, Cultural Events, Bengali Heritage, Bengali Arts, Bengali Music, Bengali Dance">
-<meta name="author" content="SDPCC">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:title" content="Saskatoon Durga Puja Celebration Committee (SDPCC)">
-<meta property="og:description" content="Durga Puja, bengali community, Kolkata Bengali people in Saskatoon Canada, Celebrating Bengali culture, traditions, and festivals in Saskatoon, Saskatchewan, Canada">
-<meta property="og:image" content="assets/img/og-image.jpg">
-<meta property="og:url" content="https://ezopinc.github.io/sdpcc/">
-<meta property="og:type" content="website">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Saskatoon Durga Puja Celebration Committee (SDPCC)">
-<meta name="twitter:description" content="CDurga Puja, bengali community, Kolkata Bengali people in Saskatoon Canada, Celebrating Bengali culture, traditions, and festivals in Saskatoon, Saskatchewan, Canada">
-<meta name="twitter:image" content="assets/img/og-image.jpg">
-
-
 {%- comment -%} _includes/seo.html {%- endcomment -%}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ page.title | default: site.title }}</title>
 <meta name="description" content="{{ page.description | default: site.description }}">
 <meta name="author" content="{{ page.author | default: site.author }}">
-<meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}{% endif %}">
+{% if page.tags %}
+<meta name="keywords" content="{{ page.tags | join: ', ' }}">
+{% endif %}
 
-<!-- Open Graph / Facebook -->
-<meta property="og:title" content="{{ page.title }}">
+<!-- Open Graph -->
+<meta property="og:title" content="{{ page.title | default: site.title }}">
 <meta property="og:description" content="{{ page.description | default: site.description }}">
 <meta property="og:image" content="{{ page.featured_image | default: site.default_image }}">
-<meta property="og:type" content="article">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 
-<!-- Twitter Card -->
+<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:title" content="{{ page.title | default: site.title }}">
 <meta name="twitter:description" content="{{ page.description | default: site.description }}">
 <meta name="twitter:image" content="{{ page.featured_image | default: site.default_image }}">
