@@ -6,22 +6,21 @@ layout: default
 <div class="post-container">
   <article class="post-main">
     <div class="postheader">
-        <h1 class="post-title">{{ page.title }}</h1>
-        <div class="post-meta">
-          <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
-          {% if page.reading_time %}
-          <span class="post-reading-time">· {{ page.reading_time }}</span>
-          {% endif %}
-        </div>
-        {% if page.tags %}
-        <div class="post-tags">
-          {% for tag in page.tags %}
-            <a href="{{ '/tags/' | append: tag | relative_url }}" class="tag">{{ tag }}</a>
-          {% endfor %}
-        </div>
+      <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-meta">
+        <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+        {% if page.reading_time %}
+        <span class="post-reading-time">· {{ page.reading_time }}</span>
         {% endif %}
+      </div>
+      {% if page.tags %}
+      <div class="post-tags">
+        {% for tag in page.tags %}
+          <a href="{{ '/tags/' | append: tag | relative_url }}" class="tag">{{ tag }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
-
     {% if page.image %}
     <div class="post-image">
       <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
@@ -33,7 +32,7 @@ layout: default
     </div>
   </article>
 
-  <!-- Sidebar with related posts -->
+<!-- Sidebar with related posts -->
   <aside class="post-sidebar">
      <h3>Related Articles</h3>
      <ul>
