@@ -15,6 +15,7 @@ header {
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 @keyframes headerGradient {
     0% {
         background-position: 0% 50%;
@@ -224,6 +225,7 @@ section h2 {
     border-image-slice: 1;
     border-image-source: radial-gradient(circle, #ffca3a, #fb8500, #ff3b7a, #f000ff);
 }
+
 .site-footer h5 {
     margin-bottom: 1rem;
     color: #fff;
@@ -589,4 +591,39 @@ img {
     .post-container {
         flex-direction: column;
     }
+}
+
+/* Gallery styles 
+for all images click option
+*/
+/* Lightbox overlay */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Full image */
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+/* Close button */
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
 }

@@ -10,15 +10,15 @@ Explore our year-wise celebration galleries:
 
 - **2025** - Saraswati Puja Group photo
 
-<img src="{{ '/assets/images/2025_saraswati_puja.jpg' | relative_url }}" alt="2025 Saraswati Puja" class="img">
+<img src="{{ '/assets/images/2025_saraswati_puja.jpg' | relative_url }}" alt="2025 Saraswati Puja" class="gallery-img">
 
 - **2024** - Durga Puja Group Photo
 
-<img src="{{ '/assets/images/2024_durga_puja.jpg' | relative_url }}" alt="2024 Durga Puja" class="img">
+<img src="{{ '/assets/images/2024_durga_puja.jpg' | relative_url }}" alt="2024 Durga Puja" class="gallery-img">
 
 - **2024** - Saraswati Puja & Cultural Program
 
-<img src="{{ '/assets/images/2024_saraswati_puja.jpg' | relative_url }}" alt="2024 Durga Puja" class="img">
+<img src="{{ '/assets/images/2024_saraswati_puja.jpg' | relative_url }}" alt="2024 Durga Puja" class="gallery-img">
 
 
 - **2023** - Durga Puja & Community Dinner
@@ -30,4 +30,11 @@ Explore our year-wise celebration galleries:
     Visit our Facebook Page <a href="https://www.facebook.com/saskatoondurgapuja" target="_blank">
      Saskatoon Durga Puja 
   </a> for more information
+</div>
+<!-- New addition for gallery enhancement-->
+
+<!-- Lightbox modal -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
 </div>
