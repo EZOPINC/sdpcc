@@ -6,14 +6,32 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #db4f4f, #f57c00, #fbc02d);
-    color: white;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    background: radial-gradient(circle, #ffca3a, #fb8500, #ff3b7a, #f000ff);
+    background-size: 400% 400%;
+    animation: headerGradient 20s ease infinite;
+    color: #fff;
+    padding: 0.5rem 0;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@keyframes headerGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 header h1,
 header p {
-    color: #fff;
+    color: #090808;
 }
 
 section h2 {
@@ -21,36 +39,38 @@ section h2 {
 }
 
 /* -------------------- Navbar -------------------- */
-.navbar {
+.site-navbar {
     background: #2c3e50;
     padding: 10px 10px;
 }
 
-.nav-container {
+.site-nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* logo left, nav right */
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
 }
 
-.logo-link {
+.site-logo-link {
     display: flex;
     align-items: center;
     text-decoration: none;
     gap: 2px;
 }
 
-.logo {
-    height: 45px;
+.site-logo {
+    height: 130px;
+    width: auto;
     margin-right: 10px;
 }
 
 .site-name {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #fbed2d;
+    color: #F5F5F5;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Nav links */
@@ -66,15 +86,17 @@ section h2 {
 }
 
 .nav-links a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     padding: 10px 10px;
     transition: background 0.3s ease;
 }
 
 .nav-links a:hover {
-    background: #34495e;
+    background: #ffffff;
     border-radius: 4px;
+    color: #2c3e50;
+    text-transform: uppercase;
 }
 
 /* Dropdown Menu */
@@ -85,7 +107,7 @@ section h2 {
 .dropdown-content {
     display: none;
     position: absolute;
-    background: #34495e;
+    background: #081777;
     top: 100%;
     left: 0;
     min-width: 180px;
@@ -135,6 +157,7 @@ section h2 {
     border-radius: 3px;
     transition: 0.3s;
 }
+
 /* Hamburger animation (X) */
 .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
@@ -186,12 +209,21 @@ section h2 {
 }
 
 /* -------------------- Footer -------------------- */
-.site-footer {
-    background: #1a1a1a;
-    color: #ccc;
+/*.site-footer {
     padding: 2rem 0;
+    background-color: #2b0f30;
+    color: #d8d8d8;
 }
-
+    */
+.site-footer {
+    background-color: #121212;
+    /* A very dark charcoal/off-black */
+    color: #d8d8d8;
+    /* This creates the gradient border on top */
+    border-top: 4px solid;
+    border-image-slice: 1;
+    border-image-source: radial-gradient(circle, #ffca3a, #fb8500, #ff3b7a, #f000ff);
+}
 .site-footer h5 {
     margin-bottom: 1rem;
     color: #fff;
@@ -208,6 +240,7 @@ section h2 {
     transform: scale(1.2) rotate(5deg);
     color: #f39c12;
 }
+
 /* Make footer sticky */
 html,
 body {
@@ -222,8 +255,10 @@ body {
 }
 
 .content {
-    flex: 1; /* push footer to bottom */
+    flex: 1;
+    /* push footer to bottom */
 }
+
 /* -------------------- Homepage -------------------- */
 img {
     max-width: 50%;
@@ -232,6 +267,7 @@ img {
     margin: 1rem auto;
     border-radius: 12px;
 }
+
 /*Index Page Link styles*/
 .center-link {
     text-align: center;
@@ -306,6 +342,7 @@ img {
 .view-all-events:hover {
     background: #a93226;
 }
+
 /* -------------------- Animations and Layouts -------------------- */
 /* Home page sidebar styles */
 .home-container {
@@ -441,11 +478,13 @@ img {
     min-width: 900px;
     /* ensure enough width for content */
 }
+
 @keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
+
 .postheader {
     margin-bottom: 1.5rem;
     border-bottom: 1px solid #000000;
@@ -494,28 +533,29 @@ img {
     animation: slideInRight 0.6s ease-in-out;
     min-width: 300px;
 }
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
 
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @keyframes slideInRight {
-  from {
-    transform: translateX(50px);
-    opacity: 0;
-  }
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
 
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .post-sidebar h3 {
