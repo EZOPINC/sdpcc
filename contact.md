@@ -6,7 +6,7 @@ permalink: /contact/
 
 # Connect with Us
 
-📧 Email: [info@sdpcc.ca](mailto:supratim.ghosh@gmail.com)  
+📧 Email: [supratim.ghosh@gmail.com](mailto:supratim.ghosh@gmail.com)  
 📞 Phone: +1 (306) 241-9282
 
 Follow us on:  
