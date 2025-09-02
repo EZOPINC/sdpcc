@@ -35,3 +35,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Events page - Filter events by category
+  document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".event-item");
+    const details = document.querySelectorAll(".event-detail");
+
+    items.forEach(item => {
+      item.addEventListener("click", () => {
+        // hide all details
+        details.forEach(d => d.classList.remove("active"));
+
+        // remove highlight from all list items
+        items.forEach(i => i.classList.remove("active"));
+
+        // show clicked one
+        const eventId = item.getAttribute("data-event-id");
+        document.getElementById(eventId).classList.add("active");
+        item.classList.add("active");
+      });
+    });
+
+    // Auto-select first event on page load
+    if (items.length > 0) {
+      items[0].click();
+    }
+  });
+  
