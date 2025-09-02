@@ -40,20 +40,26 @@ section h2 {
 }
 
 /* -------------------- Navbar -------------------- */
-.site-navbar {
-    background: #2c3e50;
-    padding: 10px 10px;
+/* Base Navbar */
+/*.header {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+  */
 
 .site-nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* logo left, nav right */
-    width: 75%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px 20px;
 }
 
+/* Logo */
 .site-logo-link {
     display: flex;
     align-items: center;
@@ -62,9 +68,9 @@ section h2 {
 }
 
 .site-logo {
-    height: 130px;
-    width: auto;
-    margin-right: 10px;
+  height: 80px;
+  margin-right: 20px;
+  width: auto;
 }
 
 .site-name {
@@ -76,10 +82,10 @@ section h2 {
 
 /* Nav links */
 .nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .nav-links li {
@@ -100,11 +106,11 @@ section h2 {
     text-transform: uppercase;
 }
 
-/* Dropdown Menu */
+
+/* Dropdown */
 .dropdown {
     position: relative;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -134,80 +140,93 @@ section h2 {
     border-radius: 4px;
 }
 
+.dropbtn::after {
+    content: " ▼";
+    font-size: 0.6rem;
+    margin-left: 5px;
+    color: #333;
+
+}
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
-/* -------------------- Hamburger -------------------- */
+/* Hamburger (hidden on desktop) */
 .hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .hamburger span {
-    display: block;
-    height: 3px;
+  width: 25px;
+  height: 3px;
+  background: #333;
+  transition: 0.3s;
+}
+
+/* --- MOBILE STYLES --- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
     width: 100%;
     background: #fff;
-    border-radius: 3px;
-    transition: 0.3s;
-}
+    flex-direction: column;
+    overflow: hidden;
 
-/* Hamburger animation (X) */
-.hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.active span:nth-child(2) {
+    /* For slide down animation */
+    max-height: 0;
     opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+  }
+
+  .nav-links.active {
+    max-height: 500px; /* enough height for menu */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-links li {
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Dropdown inside mobile */
+  .dropdown-content {
+    position: relative;
+    box-shadow: none;
+    background: #f0f0f0;
+    
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none; /* disable hover */
+  }
+
+  .dropdown .dropbtn::after {
+    content: " ▸";
+  }
+
+  .dropdown.open .dropdown-content {
+    display: block;
+    margin-top: 10px;
+    background: #22e4da;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  }
 }
 
-.hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
-}
-
-/* -------------------- Mobile -------------------- */
-@media (max-width: 768px) {
-    .nav-links {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background: #2c3e50;
-        flex-direction: column;
-        width: 220px;
-        padding: 15px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease-in-out;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 0 0 6px 6px;
-        z-index: 999;
-    }
-
-    .nav-links.open {
-        max-height: 500px;
-    }
-
-    /* toggled menu */
-
-    .hamburger {
-        display: flex;
-    }
-
-    /* Dropdown inside mobile */
-    .dropdown:hover .dropdown-content {
-        position: static;
-        display: block;
-        background: none;
-        box-shadow: none;
-    }
-}
 
 /* MAIN CONTENT */
 
