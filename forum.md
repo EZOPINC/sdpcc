@@ -11,7 +11,7 @@ Also collaboration with different cultural society is in progress now and we wil
 
 Also if you want any cultural events or religious events to be published here please do let us know.
 
-📧 Email: [info@sdpcc.ca](mailto:supratim.ghosh@gmail.com)  
+📧 Email: [info@sdpcc.ca](mailto:ibcas999@gmail.com)  
 📞 Phone: +1 (306) 241-9282
 
 Follow us on:  
