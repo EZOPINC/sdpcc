@@ -1,14 +1,26 @@
 // Custom JS for SDPCC site
 // Mobile menu toggle
-  document.addEventListener("DOMContentLoaded", function() {
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
+// Mobile hamburger toggle
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+  const dropdowns = document.querySelectorAll(".dropdown");
 
-    hamburger.addEventListener("click", function() {
-      navLinks.classList.toggle("open");
-      hamburger.classList.toggle("active");
+  // Toggle mobile nav
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  // Handle dropdowns in mobile
+  dropdowns.forEach(dropdown => {
+    const btn = dropdown.querySelector(".dropbtn");
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      dropdown.classList.toggle("open");
     });
   });
+});
+
 
 // Smooth Lightbox Initialization for gallery Images
 // Lightbox for gallery
