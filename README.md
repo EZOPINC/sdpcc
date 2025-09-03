@@ -1,3 +1,9 @@
+---
+layout: default
+title: readme
+permalink: /readme/
+---
+
 ## Saskatoon Durga Puja Celebration Committee (SDPCC) Website
 
 This is the official website for the **Saskatoon Durga Puja Celebration Committee (SDPCC)**, a Bengali cultural community in Saskatoon, Saskatchewan, Canada.  
@@ -79,17 +85,12 @@ sdpcc-jekyll/
 ## Credits
 
 - Community: **Saskatoon Durga Puja Celebration Committee (SDPCC)**  
-- Location: Saskatoon, Saskatchewan, Canada  
-"""
-
-
-# Saskatoon Durga Puja Celebration Committee (SDPCC) Website
+- Location: Saskatoon, Saskatchewan, Canada 
 
 This is the official Jekyll-based website for the **Saskatoon Durga Puja Celebration Committee (SDPCC)**.
 
-## If you want to develop or design and run Locally
+If you want to develop or design and run Locally
 
-```bash
-gem install bundler jekyll
-bundle install
-bundle exec jekyll serve
+      gem install bundler jekyll
+      bundle install
+      bundle exec jekyll serve
