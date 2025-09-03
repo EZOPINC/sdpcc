@@ -38,10 +38,10 @@ We welcome everyone who shares a love for culture, music, and togetherness. Whet
 
 ## Get Involved
 
-- Stay updated through our [Events](/events/) page.  
-- Explore memories in our [Gallery](/gallery/).  
-- Read and share reflections on our [Blog](/blog/).  
-- Be part of discussions on our [Forum](/forum/).  
+- Stay updated through our [Events]({{ '/events/' | relative_url }}) page.  
+- Explore memories in our [Gallery]({{ '/gallery/' | relative_url }}) section.  
+- Read and share reflections on our [Blog]({{ '/blog/' | relative_url }}).  
+- Be part of discussions on our [Forum]({{ '/forum/' | relative_url }}).  
 
 Every contribution — big or small — adds to the strength of our community.  
 
