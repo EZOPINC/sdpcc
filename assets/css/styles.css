@@ -441,6 +441,56 @@ img {
     }
 }
 
+
+/* Additional design for home page sidebar section
+for latest blog posts */
+.sidebar-widget {
+  background: #fff;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.sidebar-widget h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.latest-blog li {
+  list-style: none;
+  margin-bottom: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    padding-left: 5px;
+
+}
+
+.latest-blog a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.latest-blog a:hover {
+  text-decoration: underline;
+  color: #b33; /* match your theme */
+}
+
+.see-all {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #0066cc;
+    text-decoration: none;
+}
+.see-all:hover {
+  size: 2em;
+}
+
+
+
 /* -------------------- Blog & Posts -------------------- */
 .blog-container {
     max-width: 1000px;
