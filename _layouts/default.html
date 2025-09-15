@@ -28,7 +28,7 @@
   <aside class="sidebar slide-in-right">
     <h2>Upcoming Events</h2>
     <ul class="event-list">
-      {% for event in site.data.events limit:5 %}
+      {% for event in site.data.events limit:3 %}
         <li>
           <strong>{{ event.name }}</strong><br>
           <span>{{ event.date | date: "%B %d, %Y" }}</span><br>
@@ -36,7 +36,7 @@
         </li>
       {% endfor %}
     </ul>
-    <a href="{{ '/events/' | relative_url }}" class="view-all-events">View schedule</a>
+    <a href="{{ '/events/' | relative_url }}" class="view-all-events">View Details</a>
     <div class="sidebar-widget">
     <h3>Latest Blog</h3>
     <ul class="latest-blog">
