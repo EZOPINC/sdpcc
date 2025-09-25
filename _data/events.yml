@@ -1,7 +1,7 @@
 - date: "Sept 27, 2025"
   day: "Saturday"
   name: "Mahalaya & Durga Puja Opening Ceremony"
-  location: "Swami Lakshmi Narayan Temple"
+  location: "Shri Lakshmi Narayan Temple"
   schedule:
     - time: "10:00 AM"
       program: "Opening Ritual"
@@ -28,7 +28,7 @@
 - date: "Sept 28, 2025"
   day: "Sunday"
   name: "Sasthi, Saptami, Ashtami Puja"
-  location: "Swami Lakshmi Narayan Temple"
+  location: "Shri Lakshmi Narayan Temple"
   schedule:
     - time: "10:00 AM"
       program: "Morning Aarti & Puja"
@@ -49,7 +49,7 @@
 - date: "Oct 03, 2025"
   day: "Friday"
   name: "Maha Ashtami & Navami Puja"
-  location: "Swami Lakshmi Narayan Temple"
+  location: "Shri Lakshmi Narayan Temple"
   schedule:
     - time: "7:30 PM"
       program: "Visarjan Ritual, Shanti Jal, Boron and Shindoor daan"
@@ -63,4 +63,4 @@
 - date: "Jan 25, 2026"
   day: "Sunday"
   name: "Saraswati Puja Celebration"
-  location: "Swami Lakshmi Narayan Temple"
+  location: "Shri Lakshmi Narayan Temple"

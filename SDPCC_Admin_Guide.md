@@ -43,7 +43,7 @@ The homepage text lives in index.md. To edit:
 ``` yaml
 - date: "Sept 26, 2025"
   name: "Mahalaya & Durga Puja Opening Ceremony"
-  location: "Swami Lakshmi Narayan Temple"
+  location: "Shri Lakshmi Narayan Temple, Saskatoon"
   schedule:
     - time: "10:00 AM"
       program: "Pushpanjali"
