@@ -1,4 +1,35 @@
-- date: "Sept 27, 2025"
+##Ensure your event.date values in events.yml are already stored in YYYY-MM-DD format.#
+
+- date: "2025-10-03"
+  day: "Friday"
+  name: "Durga Puja Visarjan"
+  location: "Shri Lakshmi Narayan Temple"
+  schedule:
+    - time: "7:30 PM"
+      program: "Durga Puja Visarjan Ritual, Shanti Jal, Boron and Shindoor daan"
+      participants: "All Devotees"
+
+- date: "2025-10-19"
+  day: "Sunday"
+  name: "Bijoya Sommeloni"
+  location: "Confed Inn, 3330 Fairlight Dr, Saskatoon, SK S7M 3Y4"
+  schedule:
+    - time: "05:00 PM"
+      program: "Welcome and Opening Remarks"
+      participants: "SDPCC Members"
+    - time: "06:30 PM"
+      program: "Dinner Service"
+      participants: "SDPCC Members and volunteers"
+    - time: "07:30 PM"
+      program: "Cultural Performances"
+
+- date: "2026-01-26"
+  day: "Sunday"
+  name: "Saraswati Puja Celebration"
+  location: "Shri Lakshmi Narayan Temple"
+
+
+- date: "2025-09-27"
   day: "Saturday"
   name: "Mahalaya & Durga Puja Opening Ceremony"
   location: "Shri Lakshmi Narayan Temple"
@@ -25,7 +56,7 @@
       program: "Snack & Social Time"
       participants: "All Attendees"
 
-- date: "Sept 28, 2025"
+- date: "2025-09-28"
   day: "Sunday"
   name: "Sasthi, Saptami, Ashtami Puja"
   location: "Shri Lakshmi Narayan Temple"
@@ -46,21 +77,3 @@
       program: "Evening Aarti & Prayers"
       participants: "All Devotees"
 
-- date: "Oct 03, 2025"
-  day: "Friday"
-  name: "Maha Ashtami & Navami Puja"
-  location: "Shri Lakshmi Narayan Temple"
-  schedule:
-    - time: "7:30 PM"
-      program: "Visarjan Ritual, Shanti Jal, Boron and Shindoor daan"
-      participants: "Priest & Volunteers"
-
-- date: "Oct 19, 2025"
-  day: "Sunday"
-  name: "Bijoya Sommeloni"
-  location: "Confed Inn, 3330 Fairlight Dr, Saskatoon, SK S7M 3Y4"
-
-- date: "Jan 25, 2026"
-  day: "Sunday"
-  name: "Saraswati Puja Celebration"
-  location: "Shri Lakshmi Narayan Temple"
