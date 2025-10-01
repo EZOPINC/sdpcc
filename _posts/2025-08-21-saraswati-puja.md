@@ -3,7 +3,7 @@ layout: post
 title: "Saraswati Puja – A Celebration of Knowledge and Culture"
 description: "Saraswati Puja, Kolkata Bengali Community, Bengali culture, celebration of knowledge and culture"
 date: 2025-02-02
-author: Community Team
+author: Utpal Das
 categories: [Culture, Festivals]
 tags: [Saraswati Puja, Festival, Bengali Culture, Community]
 image: "/assets/images/2024_saraswati_puja.jpg"
